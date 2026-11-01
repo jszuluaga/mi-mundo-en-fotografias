@@ -1,0 +1,6 @@
+title: "Mi mundo en fotografías"
+description: "Blog personal donde comparto mi pasión por viajar a través de fotografías y experiencias de los lugares que he tenido la oportunidad de conocer."
+baseurl: "/mi-mundo-en-fotografias"
+url: "https://jszuluaga.github.io"
+markdown: kramdown
+theme: minima
