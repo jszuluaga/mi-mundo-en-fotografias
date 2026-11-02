@@ -39,7 +39,7 @@ a {
 
 .site-header {
   width: 100%;
-  background-color: var(--crema);
+  background-color: var(--terracota);
   border-bottom: 1px solid rgba(64, 58, 53, 0.15);
 }
 
@@ -53,7 +53,7 @@ a {
 }
 
 .marca {
-  color: var(--terracota);
+  color: var(--crema);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 17px;
   font-weight: bold;
