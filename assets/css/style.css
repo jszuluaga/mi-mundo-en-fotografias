@@ -922,7 +922,7 @@ a {
   height: 155px;
   object-fit: contain;
   object-position: center;
-  background-color: var(--blanco);
+  background-color: var(--arenarosa);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(64, 58, 53, 0.10);
 }
@@ -973,4 +973,19 @@ a {
   .entrada-viaje .collage-sabores-italia img {
     height: 125px;
   }
+}
+/* Mejorar legibilidad de los textos de Italia */
+.entrada-viaje .texto-experiencia p:not(.categoria) {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.entrada-viaje .texto-portada p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.entrada-viaje .encabezado-seccion p {
+  font-size: 15px;
+  line-height: 1.8;
 }
