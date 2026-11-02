@@ -1,0 +1,121 @@
+/* ESTILOS GENERALES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F4EBDD;
+  color: #403A35;
+  font-family: Georgia, serif;
+  line-height: 1.7;
+}
+
+/* PRESENTACIÓN PRINCIPAL */
+
+.presentacion {
+  text-align: center;
+  padding: 85px 20px 65px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.etiqueta {
+  color: #B87659;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.presentacion h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.introduccion {
+  max-width: 650px;
+  margin: 20px auto;
+  color: #6B6259;
+  font-size: 17px;
+}
+
+/* SECCIÓN DE DESTINOS */
+
+.destinos {
+  padding: 55px 8%;
+  text-align: center;
+  background-color: #FAF7F1;
+}
+
+.destinos h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 10px 0 40px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tarjeta {
+  background-color: #F4EBDD;
+  padding: 35px 25px;
+  border-radius: 4px;
+  border: 1px solid #E4D6C5;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+  font-size: 25px;
+  font-weight: normal;
+  color: #7C8265;
+}
+
+.tarjeta p {
+  color: #6B6259;
+  font-size: 15px;
+}
+
+.tarjeta a {
+  color: #B87659;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tarjeta a:hover {
+  text-decoration: underline;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 768px) {
+  .presentacion {
+    padding: 55px 20px;
+  }
+
+  .presentacion h1 {
+    font-size: 35px;
+  }
+
+  .destinos {
+    padding: 40px 20px;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
