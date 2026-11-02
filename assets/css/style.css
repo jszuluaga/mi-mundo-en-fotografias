@@ -1033,3 +1033,23 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.entrada-sf .galeria-neblina {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 25px 0 40px;
+}
+
+.entrada-sf .galeria-neblina img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .entrada-sf .galeria-neblina {
+    grid-template-columns: 1fr;
+  }
+}
