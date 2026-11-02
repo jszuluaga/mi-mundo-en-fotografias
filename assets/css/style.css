@@ -691,33 +691,9 @@ a {
     padding: 65px 25px;
   }
 }
-
 /* =====================================
-   11. GALERÍAS DE ITALIA
+   11. GALERÍAS Y SECCIONES DE ITALIA
 ===================================== */
-
-/* Collage gastronómico de Italia */
-.galeria-comida-italia {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 220px;
-  gap: 16px;
-  margin-top: 35px;
-}
-
-.galeria-comida-italia img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(64, 58, 53, 0.10);
-  transition: transform 0.3s ease;
-}
-
-.galeria-comida-italia img:hover {
-  transform: translateY(-4px);
-}
 
 /* Galería de Venecia */
 .entrada-viaje .galeria-paris {
@@ -740,26 +716,48 @@ a {
   box-shadow: 0 5px 15px rgba(64, 58, 53, 0.10);
 }
 
+/* Sección gastronómica: texto a la izquierda y fotos a la derecha */
+.sabores-italia {
+  align-items: center;
+  gap: 35px;
+}
+
+.collage-sabores-italia {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 125px);
+  gap: 10px;
+}
+
+.collage-sabores-italia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(64, 58, 53, 0.10);
+}
+
 /* Adaptación para tabletas */
 @media (max-width: 800px) {
-  .galeria-comida-italia {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 210px;
-  }
-
   .entrada-viaje .fotos-galeria img {
     height: 260px;
+  }
+
+  .sabores-italia {
+    flex-direction: column;
+  }
+
+  .collage-sabores-italia {
+    width: 100%;
+    grid-template-rows: repeat(3, 150px);
   }
 }
 
 /* Adaptación para celulares */
 @media (max-width: 550px) {
-  .galeria-comida-italia {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 160px;
-    gap: 10px;
-  }
-
   .entrada-viaje .fotos-galeria {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -767,5 +765,10 @@ a {
 
   .entrada-viaje .fotos-galeria img {
     height: 250px;
+  }
+
+  .collage-sabores-italia {
+    grid-template-rows: repeat(3, 115px);
+    gap: 8px;
   }
 }
