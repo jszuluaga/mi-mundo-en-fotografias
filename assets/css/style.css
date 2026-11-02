@@ -164,34 +164,32 @@ a {
 
 .foto {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
   overflow: hidden;
-  padding: 18px;
-  color: white;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 23px;
   box-shadow: 0 8px 20px rgba(64, 58, 53, 0.12);
 }
 
-.foto span {
-  position: relative;
-  z-index: 1;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+.foto img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .foto-paris {
   grid-row: 1 / 3;
-  background: linear-gradient(145deg, #B58C78, #59483F);
 }
 
 .foto-italia {
-  background: linear-gradient(145deg, #A7A17B, #646B50);
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .foto-san-francisco {
-  background: linear-gradient(145deg, #9A9C9A, #59666A);
+  grid-column: 2;
+  grid-row: 2;
 }
 
 /* =====================================
@@ -249,29 +247,16 @@ a {
 
 .imagen-tarjeta {
   height: 190px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 15px;
-  color: white;
+  overflow: hidden;
+  background-color: var(--beige);
 }
 
-.imagen-tarjeta span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 25px;
-  opacity: 0.85;
-}
-
-.tarjeta-paris {
-  background: linear-gradient(135deg, #B58C78, #74584B);
-}
-
-.tarjeta-italia {
-  background: linear-gradient(135deg, #B5B08B, #737B5B);
-}
-
-.tarjeta-san-francisco {
-  background: linear-gradient(135deg, #A1A9A8, #596D70);
+.imagen-tarjeta img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contenido-tarjeta {
@@ -355,11 +340,6 @@ a {
     text-align: center;
   }
 
-  .presentacion h1 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .introduccion {
     margin-left: auto;
     margin-right: auto;
@@ -406,11 +386,6 @@ a {
     height: 300px;
   }
 
-  .foto {
-    padding: 12px;
-    font-size: 18px;
-  }
-
   .destinos {
     padding: 55px 5%;
   }
@@ -422,17 +397,4 @@ a {
   .imagen-tarjeta {
     height: 210px;
   }
-}
-
-/* Fotografías del collage principal */
-.foto {
-    overflow: hidden;
-}
-
-.foto img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
 }
