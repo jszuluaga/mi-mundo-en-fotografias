@@ -10,6 +10,7 @@
   --marron: #403A35;
   --blanco: #FFFCF7;
   --texto-suave: #746C64;
+  --arenarosa #EADCCB;
 }
 
 * {
@@ -237,7 +238,7 @@ a {
 
 .tarjeta {
   overflow: hidden;
-  background-color: var(--terracota);
+  background-color: var(--arenarosa);
   box-shadow: 0 5px 22px rgba(64, 58, 53, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
