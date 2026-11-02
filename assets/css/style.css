@@ -809,3 +809,168 @@ a {
     height: 250px;
   }
 }
+/* =====================================
+   12. AJUSTES VISUALES DE ITALIA
+===================================== */
+
+/* PORTADA: controlar el tamaño de la fotografía */
+.entrada-viaje .portada-destino {
+  max-width: 100%;
+  padding: 45px 5% 65px;
+}
+
+.entrada-viaje .portada-destino > img {
+  display: block;
+  width: min(100%, 950px);
+  height: 330px;
+  margin: 0 auto 35px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(64, 58, 53, 0.12);
+}
+
+.texto-portada {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.texto-portada > span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--oliva);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.texto-portada h1 {
+  margin: 0;
+  color: var(--marron);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 55px);
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+.texto-portada p {
+  color: var(--texto-suave);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* IMÁGENES DE LOS BLOQUES */
+.entrada-viaje img.foto-experiencia {
+  display: block;
+  width: 100%;
+  height: 390px;
+  min-width: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* FOTOGRAFÍAS VERTICALES: centradas y sin deformar */
+.entrada-viaje img.foto-experiencia.foto-vertical {
+  width: 100%;
+  max-width: 390px;
+  height: 390px;
+  justify-self: center;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--arenarosa);
+}
+
+/* ROMA, PISA Y LOS BLOQUES INVERTIDOS */
+.entrada-viaje .bloque-experiencia {
+  align-items: center;
+}
+
+.entrada-viaje .texto-experiencia {
+  min-width: 0;
+}
+
+.entrada-viaje .bloque-invertido .texto-experiencia {
+  order: 2;
+}
+
+.entrada-viaje .bloque-invertido .foto-experiencia {
+  order: 1;
+}
+
+/* COLLAGE GASTRONÓMICO */
+.entrada-viaje .sabores-italia {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.entrada-viaje .collage-sabores-italia {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 155px);
+  gap: 12px;
+}
+
+.entrada-viaje .collage-sabores-italia img {
+  display: block;
+  width: 100%;
+  height: 155px;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(64, 58, 53, 0.10);
+}
+
+/* TABLETAS */
+@media (max-width: 800px) {
+  .entrada-viaje .portada-destino > img {
+    height: 290px;
+  }
+
+  .entrada-viaje .sabores-italia {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .entrada-viaje .collage-sabores-italia {
+    grid-template-rows: repeat(3, 170px);
+  }
+
+  .entrada-viaje .collage-sabores-italia img {
+    height: 170px;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 550px) {
+  .entrada-viaje .portada-destino {
+    padding: 35px 7% 45px;
+  }
+
+  .entrada-viaje .portada-destino > img {
+    height: 230px;
+  }
+
+  .entrada-viaje img.foto-experiencia {
+    height: 280px;
+  }
+
+  .entrada-viaje img.foto-experiencia.foto-vertical {
+    height: 320px;
+  }
+
+  .entrada-viaje .collage-sabores-italia {
+    grid-template-rows: repeat(3, 125px);
+    gap: 8px;
+  }
+
+  .entrada-viaje .collage-sabores-italia img {
+    height: 125px;
+  }
+}
