@@ -701,7 +701,7 @@ a {
   margin-bottom: 55px;
 }
 
-.entrada-viaje .fotos-galeria {
+/*.entrada-viaje .fotos-galeria {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
@@ -714,7 +714,7 @@ a {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(64, 58, 53, 0.10);
-}
+}*/
 
 /* Sección gastronómica: texto a la izquierda y fotos a la derecha */
 .sabores-italia {
