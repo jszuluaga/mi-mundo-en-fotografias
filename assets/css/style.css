@@ -1034,34 +1034,21 @@ a {
   }
 }
 
-.entrada-sf .galeria-neblina {
+/* Sección de neblina: texto a la izquierda y collage a la derecha */
+
+.entrada-sf .bloque-neblina {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 25px 0 40px;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 25px;
 }
-
-.entrada-sf .galeria-neblina img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-@media (max-width: 600px) {
-  .entrada-sf .galeria-neblina {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Collage de neblina en San Francisco */
 
 .entrada-sf .galeria-neblina {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 190px);
-  gap: 16px;
-  margin: 25px 0 40px;
+  gap: 10px;
+  margin: 0;
 }
 
 .entrada-sf .galeria-neblina img {
@@ -1076,13 +1063,12 @@ a {
   grid-row: 1 / 3;
 }
 
-@media (max-width: 600px) {
-  .entrada-sf .galeria-neblina {
-    grid-template-rows: 360px 190px 190px;
+@media (max-width: 700px) {
+  .entrada-sf .bloque-neblina {
     grid-template-columns: 1fr;
   }
 
-  .entrada-sf .galeria-neblina img:first-child {
-    grid-row: auto;
+  .entrada-sf .galeria-neblina {
+    grid-template-rows: 300px 150px;
   }
 }
