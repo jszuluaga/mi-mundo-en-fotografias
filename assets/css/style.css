@@ -160,7 +160,6 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 12px;
-/*transform: rotate(1deg);*/
 }
 
 .foto {
