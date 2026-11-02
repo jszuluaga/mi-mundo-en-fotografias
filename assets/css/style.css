@@ -1053,3 +1053,36 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Collage de neblina en San Francisco */
+
+.entrada-sf .galeria-neblina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 190px);
+  gap: 16px;
+  margin: 25px 0 40px;
+}
+
+.entrada-sf .galeria-neblina img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: var(--arenarosa);
+  border-radius: 12px;
+}
+
+.entrada-sf .galeria-neblina img:first-child {
+  grid-row: 1 / 3;
+}
+
+@media (max-width: 600px) {
+  .entrada-sf .galeria-neblina {
+    grid-template-rows: 360px 190px 190px;
+    grid-template-columns: 1fr;
+  }
+
+  .entrada-sf .galeria-neblina img:first-child {
+    grid-row: auto;
+  }
+}
