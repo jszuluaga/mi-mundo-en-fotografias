@@ -401,3 +401,293 @@ a {
     height: 210px;
   }
 }
+
+/* =====================================
+   10. ENTRADAS INDIVIDUALES DE VIAJES
+===================================== */
+
+.entrada-viaje {
+  width: 100%;
+  overflow: hidden;
+}
+
+.portada-destino {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 85px 25px 70px;
+  text-align: center;
+}
+
+.portada-destino h1 {
+  margin: 0;
+  color: var(--marron);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 66px);
+  font-weight: normal;
+  line-height: 1.12;
+}
+
+.portada-destino .subtitulo {
+  margin: 20px 0;
+}
+
+.portada-destino .introduccion {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--texto-suave);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.bloque-experiencia {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding: 45px 0 75px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.bloque-invertido .texto-experiencia {
+  order: 2;
+}
+
+.bloque-invertido .foto-experiencia {
+  order: 1;
+}
+
+.texto-experiencia h2,
+.texto-dulces h2,
+.texto-noche h2,
+.encabezado-lugares h2,
+.cierre-paris h2 {
+  margin: 0 0 20px;
+  color: var(--marron);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(29px, 4vw, 39px);
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.texto-experiencia p:not(.categoria),
+.texto-dulces p:not(.categoria),
+.texto-noche p:not(.categoria),
+.cierre-paris > p:not(.categoria) {
+  color: var(--texto-suave);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.entrada-viaje .categoria {
+  margin: 0 0 15px;
+  color: var(--oliva);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.foto-experiencia {
+  height: 390px;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(64, 58, 53, 0.12);
+}
+
+.foto-experiencia img,
+.foto-dulces img,
+.galeria-paris img,
+.foto-noche img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.bloque-dulces {
+  padding: 75px 5%;
+  background-color: var(--blanco);
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.texto-dulces {
+  max-width: 550px;
+  justify-self: end;
+}
+
+.foto-dulces {
+  width: 100%;
+  max-width: 470px;
+  height: 350px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.lugares-paris {
+  padding: 80px 5%;
+}
+
+.encabezado-lugares {
+  max-width: 650px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.encabezado-lugares > p:last-child {
+  color: var(--texto-suave);
+  font-size: 14px;
+}
+
+.galeria-paris {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.galeria-paris figure {
+  margin: 0;
+}
+
+.galeria-paris img {
+  height: 330px;
+  box-shadow: 0 8px 22px rgba(64, 58, 53, 0.10);
+}
+
+.galeria-paris figcaption {
+  padding: 13px 0;
+  color: var(--texto-suave);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.noche-paris {
+  padding: 75px 5%;
+  background-color: var(--arenarosa);
+  text-align: center;
+}
+
+.texto-noche {
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.foto-noche {
+  width: min(1000px, 100%);
+  height: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(64, 58, 53, 0.15);
+}
+
+.cierre-paris {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 85px 25px;
+  text-align: center;
+}
+
+.frase-final {
+  color: var(--terracota) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px !important;
+  font-style: italic;
+}
+
+.enlace-regreso {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 24px;
+  border: 1px solid var(--terracota);
+  color: var(--terracota);
+  font-size: 13px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enlace-regreso:hover {
+  background-color: var(--terracota);
+  color: var(--crema);
+}
+
+/* Adaptación para tabletas y celulares */
+@media (max-width: 800px) {
+  .bloque-experiencia {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 35px 0 55px;
+  }
+
+  .bloque-invertido .texto-experiencia,
+  .bloque-invertido .foto-experiencia {
+    order: initial;
+  }
+
+  .foto-experiencia {
+    height: 350px;
+  }
+
+  .bloque-dulces {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .texto-dulces {
+    justify-self: center;
+  }
+
+  .foto-dulces {
+    max-width: 100%;
+  }
+
+  .foto-noche {
+    height: 380px;
+  }
+}
+
+@media (max-width: 550px) {
+  .portada-destino {
+    padding: 60px 22px 40px;
+  }
+
+  .foto-experiencia {
+    height: 280px;
+  }
+
+  .bloque-dulces {
+    padding: 55px 7%;
+  }
+
+  .foto-dulces {
+    height: 280px;
+  }
+
+  .lugares-paris {
+    padding: 60px 7%;
+  }
+
+  .galeria-paris {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .galeria-paris img {
+    height: 280px;
+  }
+
+  .noche-paris {
+    padding: 55px 7%;
+  }
+
+  .foto-noche {
+    height: 270px;
+  }
+
+  .cierre-paris {
+    padding: 65px 25px;
+  }
+}
