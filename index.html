@@ -3,46 +3,122 @@ layout: default
 title: Inicio
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
 <main>
+
+  <!-- Presentación principal -->
   <section class="presentacion">
-    <p class="etiqueta">MI DIARIO DE VIAJES</p>
 
-    <h1>Mi mundo en fotografías</h1>
+    <div class="presentacion-texto">
+      <p class="etiqueta">BLOG DE VIAJES</p>
 
-    <p class="introduccion">
-      Viajar es descubrir, aprender y coleccionar recuerdos.
-      En este espacio comparto mi pasión por conocer nuevos lugares
-      y las experiencias que hacen especial cada destino.
-    </p>
+      <h1>Mi mundo en fotografías</h1>
+
+      <p class="subtitulo">Lugares, recuerdos y experiencias</p>
+
+      <p class="introduccion">
+        Un espacio para compartir mi pasión por viajar y conservar
+        los momentos especiales de cada destino.
+      </p>
+
+      <a class="boton" href="#destinos">Descubrir mis viajes</a>
+    </div>
+
+    <!-- Espacio visual para fotografías -->
+    <div class="collage" aria-label="Destinos de mis viajes">
+      <div class="foto foto-paris">
+        <span>París</span>
+      </div>
+
+      <div class="foto foto-italia">
+        <span>Italia</span>
+      </div>
+
+      <div class="foto foto-san-francisco">
+        <span>San Francisco</span>
+      </div>
+    </div>
+
   </section>
 
-  <section class="destinos">
-    <p class="etiqueta">MIS VIAJES</p>
+  <!-- Sección de destinos -->
+  <section class="destinos" id="destinos">
 
-    <h2>Un mundo de experiencias por descubrir</h2>
+    <div class="encabezado-seccion">
+      <p class="etiqueta">MIS VIAJES</p>
+
+      <h2>Un mundo de experiencias por descubrir</h2>
+
+      <p>
+        Cada viaje tiene una historia y cada fotografía conserva
+        un recuerdo especial.
+      </p>
+    </div>
 
     <div class="tarjetas">
 
+      <!-- Destino 1 -->
       <article class="tarjeta">
-        <h3>París</h3>
-        <p>Una ciudad sencillamente encantadora, arte donde se mire, en pocas palabras mágica.</p>
-        <a href="#">Conocer mi experiencia</a>
+        <div class="imagen-tarjeta tarjeta-paris">
+          <span>01</span>
+        </div>
+
+        <div class="contenido-tarjeta">
+          <p class="categoria">EUROPA</p>
+          <h3>París</h3>
+
+          <p>
+            Una ciudad sencillamente encantadora, arte donde se mire,
+            en pocas palabras mágica.
+          </p>
+
+          <a href="{{ '/paris/' | relative_url }}">
+            Conocer mi experiencia →
+          </a>
+        </div>
       </article>
 
+      <!-- Destino 2 -->
       <article class="tarjeta">
-        <h3>Italia</h3>
-        <p>Un recorrido por lugares llenos de historia, cultura, belleza y ni se diga de los sabores.</p>
-        <a href="#">Conocer mi experiencia</a>
+        <div class="imagen-tarjeta tarjeta-italia">
+          <span>02</span>
+        </div>
+
+        <div class="contenido-tarjeta">
+          <p class="categoria">EUROPA</p>
+          <h3>Italia</h3>
+
+          <p>
+            Un recorrido por lugares llenos de historia, cultura,
+            belleza y ni se diga de los sabores.
+          </p>
+
+          <a href="{{ '/italia/' | relative_url }}">
+            Conocer mi experiencia →
+          </a>
+        </div>
       </article>
 
+      <!-- Destino 3 -->
       <article class="tarjeta">
-        <h3>San Francisco, Monterey y SantaCruz</h3>
-        <p>Una experiencia muy divertida y diferente.</p>
-        <a href="#">Conocer mi experiencia</a>
+        <div class="imagen-tarjeta tarjeta-san-francisco">
+          <span>03</span>
+        </div>
+
+        <div class="contenido-tarjeta">
+          <p class="categoria">ESTADOS UNIDOS</p>
+          <h3>San Francisco, Monterey y Santa Cruz</h3>
+
+          <p>
+            Una experiencia muy divertida y diferente.
+          </p>
+
+          <a href="{{ '/san-francisco/' | relative_url }}">
+            Conocer mi experiencia →
+          </a>
+        </div>
       </article>
 
     </div>
   </section>
+
 </main>
