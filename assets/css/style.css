@@ -268,7 +268,7 @@ a {
 
 .categoria {
   margin: 0 0 8px;
-  color: var(--crema);
+  color: var(--texto-suave);
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -276,7 +276,7 @@ a {
 
 .contenido-tarjeta h3 {
   margin: 0 0 10px;
-  color: var(--crema);
+  color: var(--marron);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 25px;
   font-weight: normal;
@@ -293,14 +293,14 @@ a {
 .contenido-tarjeta a {
   display: inline-block;
   margin-top: 12px;
-  color: var(--beige);
+  color: var(--terracota);
   font-size: 13px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .contenido-tarjeta a:hover {
-  color: var(--crema);
+  color: var(--terracota);
 }
 
 /* =====================================
